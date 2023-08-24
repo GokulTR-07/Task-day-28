@@ -1,0 +1,28 @@
+body{
+  margin-top: 20px;
+  background-color: rgb(59, 59, 59);
+}
+
+img{
+  width: 300px;
+}
+
+.card {
+  background-color: rgb(126, 126, 126);
+  border-radius: 500px;
+}
+.footer{
+  font-size: larger;
+}
+
+@media screen and (max-width:600px) {
+  .card{
+    border-radius: 50px;
+  }
+}
+
+
+
+
+
+
