@@ -5,12 +5,18 @@ body{
 
 img{
   width: 300px;
+  border-radius: 5px;
 }
 
 .card {
   background-color: rgb(126, 126, 126);
   border-radius: 500px;
 }
+
+.card:hover{
+  box-shadow: 5px 5px 20px 10px rgb(33, 33, 33);
+}
+
 .footer{
   font-size: larger;
 }

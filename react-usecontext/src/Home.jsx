@@ -51,14 +51,14 @@ function Home() {
             <>
             <div className="container text-center">
               <div className='row'>
-                <div class="col" key={item.id}>
+                <div className="col" key={item.id}>
             
-                    <div class="card mt-4 mb-5">
+                    <div className="card mt-4 mb-5">
                       
-                      <div class="card-body ">
+                      <div className="card-body ">
                       <img src={item.thumbnail} alt="..."/>
-                        <h1 class="card-title mt-2">{item.title}</h1>
-                        <h6 class="card-text">{item.description}</h6>
+                        <h1 className="card-title mt-2">{item.title}</h1>
+                        <h6 className="card-text">{item.description}</h6>
                         <div>
                           <button className='btn btn-dark m-2' onClick={()=>handleChange(item, -1)}>-</button>
                           <button className='btn btn-dark btn-lg m-2'>{item.quantity}</button>
@@ -66,7 +66,7 @@ function Home() {
                         </div>
                         <div>
                           <h5>Price: ${item.price*item.quantity}</h5>
-                          <button className='btn btn-danger btn-lg' onClick={()=>handleRemove(item.id)}>Remove</button>
+                          <button className='btn btn-danger btn-lg mt-2 pl-lg-5 pr-lg-5' onClick={()=>handleRemove(item.id)}>Remove</button>
                         </div>
                       </div>  
                     </div>  
