@@ -57,15 +57,15 @@ function Home() {
                       
                       <div class="card-body ">
                       <img src={item.thumbnail} alt="..."/>
-                        <h1 class="card-title">{item.title}</h1>
+                        <h1 class="card-title mt-2">{item.title}</h1>
                         <h6 class="card-text">{item.description}</h6>
                         <div>
                           <button className='btn btn-dark m-2' onClick={()=>handleChange(item, -1)}>-</button>
-                          <button className='btn btn-dark m-2'>{item.quantity}</button>
+                          <button className='btn btn-dark btn-lg m-2'>{item.quantity}</button>
                           <button className='btn btn-dark m-2' onClick={()=>handleChange(item, +1)}>+</button>
                         </div>
                         <div>
-                          <p>Price: ${item.price*item.quantity}</p>
+                          <h5>Price: ${item.price*item.quantity}</h5>
                           <button className='btn btn-danger btn-lg' onClick={()=>handleRemove(item.id)}>Remove</button>
                         </div>
                       </div>  
