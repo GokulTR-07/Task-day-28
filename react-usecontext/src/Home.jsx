@@ -31,8 +31,8 @@ function Home() {
     const tempArr = cart;
     tempArr[ind].quantity += op;
 
-    if (tempArr[ind].quantity === 0)
-       tempArr[ind].quantity = 1;
+    if (tempArr[ind].quantity === -1)
+       tempArr[ind].quantity = 0;
       setCart([...tempArr])
   }
 
